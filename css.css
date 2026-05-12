@@ -1,0 +1,86 @@
+.primary {
+    display: none;
+    padding-left: 10px;
+}
+.secondary {
+    display: none;
+    padding-left: 20px;
+}
+.button{
+    color: white;
+    border: none;
+    background: none;
+    padding: 0px;
+    display: block;
+}
+.button:hover{
+	text-decoration: underline white;
+}
+@font-face {
+	src: url(fonts/Tiny5-Regular.ttf);
+	font-family: pixel;
+}
+body{
+	background-color: #789461;
+}
+p{
+	color: #DBE7C9;
+    margin: 0;
+}
+h1{
+	font-family: pixel;
+	color: #DBE7C9;
+}
+h2{
+	font-family: pixel;
+	color: #DBE7C9;
+}
+h3{
+	font-family: pixel;
+	color: #DBE7C9;
+    margin: 0;
+}
+#maturita_files {
+	width: 300px;
+	height: 500px;
+	background: rgba(80, 98, 58, 0.65);
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 10px;
+	padding: 10px;
+    position: relative;
+                }
+                #maturita_files #currently_reading {
+                    position: normal;
+                    height: 10%; /* height is auto */
+                    left: 10px;
+                    right: 10px;
+                    background: rgb(219, 231, 201, 0.2);
+                    padding: 5px;
+                    margin-bottom: 10px;
+                }
+body {
+	image-rendering: pixelated;
+	background-image: url("images/forest-tile.png");
+}
+.link{
+	color: white;
+	text-decoration: none;
+    display: block;
+}
+.link:hover{
+	text-decoration: underline white;
+}
+.bar {
+    background: rgba(80, 98, 58, 0.65);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.bar a {
+    color: white;
+    display: inline-block;
+    padding: 4px 10px;
+}
