@@ -1,0 +1,92 @@
+@font-face {
+	src: url(fonts/Tiny5-Regular.ttf);
+	font-family: pixel;
+}
+a, p {
+    color: rgba(224, 192, 151);
+}
+h1, h2, h3, h4 {
+    font-family: pixel;
+    color: rgb(224, 192, 151);
+}
+ul li {
+    color: rgba(224, 192, 151);
+    font-size: 20px;
+}
+body {
+    /* display flex, because I want to add footer and header without caclulating pixels */
+    display: flex;
+
+    min-height: 100vh;
+
+    flex-direction: column;
+
+    /* scaling algorithm - auto, smooth, crisp-edges, pixelated */
+    image-rendering: pixelated;
+
+    background-image: url("images/autumn_tile.png");
+
+    background-size: 128px 128px;
+}
+.tree {
+    --spacing: 1.5rem;
+    --radius: 10px;
+}
+.tree li {
+    display: block;
+}
+.bar_top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    background-color: rgb(92, 61, 46, 0.65);
+
+    /* Full width */
+    width: 100vw;
+    margin-left: 50%;
+
+    /* Center element for x axes */
+    transform: translate(-50%);
+
+    /* Top (-8px because body margin is 8px)*/
+    margin-top: -8px;
+}
+.bar_bottom {
+    margin-top: auto;
+    min-height: unset;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(92, 61, 46, 0.65);
+
+    
+    /* Full width */
+    width: 100vw;
+    margin-left: 50%;
+    
+
+    /* Center element for x axes */
+    transform: translate(-50%);
+    
+
+    /* Bottom (-8px because body margin is 8px)*/
+    margin-bottom: -8px;
+}
+.main_box {
+    justify-content: center;
+    margin: 10px 0px;
+    display: flex;
+    width: 100%;
+    background-color: rgba(92, 61, 46, 0.65);
+}
+@media (min-width: 800px) {
+    .main_box {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}

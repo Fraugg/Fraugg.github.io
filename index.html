@@ -1,14 +1,21 @@
-<!DOCTYPE html>   
-<!-- to do readed books -->
+<!DOCTYPE HTML>
+<!-- to 800px width box will be stretch to 100% width -->
 
-<html>	
+<html>
     <head>
         <title>Pavel Ukacko</title>
-        <link rel='stylesheet' href='css.css'>
-        <script type='text/javascript' src='java.js'></script>
+
+        <!-- linking my style.css document -->
+        <link rel='stylesheet' href='style.css'>
+
+        <!-- linking my main.js document -->
+        <script type='text/javascript' src='main.js'></script>
+
+        <!-- responsive web design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div class="bar">
+        <div class="bar_top">
             <a href="https://t.me/Frau_gg" title='link on telegram profile'>Telegram</a>
             <a href="https://discord.com/users/776360756534444072" title='link on discord profile'>Discord</a>
             <a href="https://github.com/Fraugg" title='link on github profile'>GitHub</a>
@@ -17,53 +24,80 @@
             <a href="info/index.html" title='link on page info'>Info</a>
         </div>
 
-        <br>
-
         <h1 align='center'>Pavel Ukacko</h1>
 
-        <div id='maturita_files'>
-            <h2 align='center'> Maturita files</h2>
-
-            <p align='center'>This site was created for personal use and to record progress, resources</p>
-
-            <div id='currently_reading'>
-                <h3 align='center'>Currently doing</h3>
-                <p>Zločin a trest (Dostojevský)📖</p>
+        <div class='main_box'>
+            <!-- We have to put text inside other object, because flexbox actually put all items in a row - Currently doing rerererER-->
+            <!-- <div></div> is only flexbox -->
+            <div style='text-align:center;'>
+                <h2>Currently doing <br></h2>
+                <h4>Crime and Punishment (Fyodor Dostoevsky)</h4>
             </div>
+        </div>
 
-            <button onclick="checker(this.id)"  id='b_cz' class='button' title='click to open cz books list'>CZ</button>
-            <div id="cz" class='primary'>
-                <button onclick='checker(this.id)' id='b_rur' class='button' title='rur'>rur</button>
 
-                <div id="rur" class='secondary'>
-                    <a href='files/rur_rozbor.pdf' target='_blank' class='link' title='.pdf on rur'>rozbor.pdf</a>
-                    <a href='files/rur_rozbor.tex' target='_blank' class='link' title='.tex on rur'>rozbor.tex</a>
-                </div>
+        <div class='main_box' style='flex-direction:column;'>
+            <!-- In this case I tried change flex-direction to column, so now I dont care about <br> -->
+            <h2 style='text-align:center;'>Maturita</h2>
 
-                <button onclick='checker(this.id)' id='b_kulicka' class='button' title='kulicka'>kulicka</button>
-                <div id='kulicka' class='secondary'>
-                    <a href='files/kulicka_rozbor.pdf' target='_blank' class='link' title='.pdf on kulicka'>rozbor.pdf</a>
-                    <a href='files/kulicka_rozbor.tex' target='_blank' class='link' title='.tex on kulicka'>rozbor.tex</a>
-                </div>
+            <!-- I separate each subject in own list -->
+            <ul class='tree'>
+                <li>
+                    <details>
+                        <summary>CZ</summary>
+                        <ul>
 
-                <button onclick='checker(this.id)' id='b_havran' class='button' title='havran'>havran</button>
-                <div id='havran' class='secondary'>
-                    <a href='files/havran_rozbor.pdf' target='_blank' class='link' title='.pdf on havran'>rozbor.pdf</a>
-                    <a href='files/havran_rozbor.tex' target='_blank' class='link' title='.tex on havran'>rozbor.tex</a>
-                </div>
+                            <li>
+                                <details>
+                                    <summary>Kulicka</summary>
+                                    <ul>
+                                        <li>.tex</li>
+                                        <li>.pdf</li>
+                                    </ul>
+                                </details>
+                            </li>
 
-                <button onclick='checker(this.id)' id='b_451' class='button' title='451'>451</button>
-                <div id='451' class='secondary'>
-                    <a href='files/451_rozbor.pdf' target='_blank' class='link' title='.pdf on 451'>rozbor.pdf</a>
-                    <a href='files/451_rozbor.tex' target='_blank' class='link' title='.tex on 451'>rozbor.tex</a>
-                </div>
+                            <li>
+                                <details>
+                                    <summary>Havran</summary>
+                                    <ul>
+                                        <li>.tex</li>
+                                        <li>.pdf</li>
+                                    </ul>
+                                </details>
+                            </li>
 
-                <button onclick='checker(this.id)' id='b_farma' class='button' title='farma zvirat'>farma zvirat</button>
-                <div id='farma' class='secondary'>
-                    <a href='files/farma_zvirat_rozbor.pdf' target='_blank' class='link' title='.pdf on farma zvirat'>rozbor.pdf</a>
-                    <a href='files/farma_zvirat_rozbor.tex' target='_blank' class='link' title='.tex on farma zvirat'>rozbor.tex</a>
-                </div>
-            </div> 
-        </div> 
+                            <li>
+                                <details>
+                                    <summary>451</summary>
+                                    <ul>
+                                        <li>.tex</li>
+                                        <li>.pdf</li>
+                                    </ul>
+                                </details>
+                            </li>
+
+                            <li>
+                                <details>
+                                    <summary>Onegin</summary>
+                                    <ul>
+                                        <li>.tex</li>
+                                        <li>.pdf</li>
+                                    </ul>
+                                </details>
+                            </li>
+
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+
+        </div>
+
+        <br>
+
+        <div class='bar_bottom'>
+            <a>This site was created for personal use and to record progress, resources</a>
+        </div>
     </body>
 </html>
