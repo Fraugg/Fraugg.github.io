@@ -5,13 +5,19 @@
         <title>Info</title>
 
         <link rel='stylesheet' href='../style.css'>
-        <script type='text/javascript' src='/js/main.js'></script>
+        <script type='text/javascript' src='../js/main.js'></script>
         <meta name='viewport' content='width=device-width initial-scale=1.0'> 
 
         <!-- Including highlight.js -->
-        <link rel="stylesheet" href="/js/highlight/styles/base16/gruvbox-dark-pale.css">
-        <script src="/js/highlight/highlight.min.js"></script>
-        <script>hljs.highlightAll();</script>
+        <link rel="stylesheet" href="../js/highlight/styles/base16/gruvbox-dark-pale.css">
+        <script src="../js/highlight/highlight.min.js"></script>
+
+        <!-- Use this piece of code, because it wont highlight it only with classic command -->
+        <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            hljs.highlightAll();
+        });
+        </script>
     </head>
     <body>
         <div class="bar_top">
@@ -19,7 +25,6 @@
             <a href="https://discord.com/users/776360756534444072" title='link on discord profile'>Discord</a>
             <a href="https://github.com/Fraugg" title='link on github profile'>GitHub</a>
             <a href="https://www.instagram.com/pavel_ukacko/" title='link on instagram profile'>Instagram</a>
-            <a href="books/index.html" title='link on page books'>Books</a>
             <a href="../index.html" title='link on page info'>Main</a>
         </div>
 
@@ -111,196 +116,6 @@ snapd
         <pre><code class='language-plaintext'>
 alsa-firmware
 alsa-plugins
-alsa-utils
-amd-ucode
-apt
-archlinux-keyring
-ark
-b43-fwcutter
-base
-base-devel
-bash-completion
-bind
-bluedevil
-bluez
-bluez-utils
-breeze-gtk
-btrfs-progs
-cantarell-fonts
-code
-cryptsetup
-cups
-deluge
-deluge-gtk
-device-mapper
-dialog
-diffutils
-digikam
-discord
-dmidecode
-dmraid
-dnsmasq
-dolphin
-dolphin-plugins
-dosfstools
-downgrade
-dracut
-duf
-e2fsprogs
-efibootmgr
-efitools
-endeavouros-branding
-endeavouros-keyring
-endeavouros-mirrorlist
-eos-apps-info
-eos-breeze-sddm
-eos-hooks
-eos-log-tool
-eos-packagelist
-eos-quickstart
-eos-rankmirrors
-eos-settings-plasma
-ethtool
-exfatprogs
-f2fs-tools
-fakeroot
-featherpad
-ffmpegthumbs
-firefox
-firewalld
-flatpak
-freetype2
-fwupd
-gamemode
-geogebra
-git
-glances
-gnome-calculator
-gpm
-gptfdisk
-gst-libav
-gst-plugin-pipewire
-gst-plugins-bad
-gst-plugins-ugly
-gwenview
-haruna
-haveged
-hwdetect
-hwinfo
-inetutils
-inxi
-iptables-nft
-iwd
-jfsutils
-kate
-kcalc
-kde-cli-tools
-kde-gtk-config
-kdeconnect
-kdegraphics-thumbnailers
-kdenetwork-filesharing
-kdeplasma-addons
-kernel-install-for-dracut
-kgamma
-kimageformats
-kinfocenter
-kio-admin
-kio-extras
-kio-fuse
-konsole
-krita
-kscreen
-kwallet-pam
-kwayland-integration
-less
-lib32-gnutls
-libao
-libappindicator-gtk3
-libdvdcss
-libgsf
-libopenraw
-libreoffice-still
-linux
-linux-firmware
-linux-firmware-amdgpu
-linux-firmware-marvell
-linux-firmware-nvidia
-linux-headers
-logrotate
-lsb-release
-lsscsi
-lutris
-lvm2
-maliit-keyboard
-man-db
-man-pages
-mdadm
-meld
-memtest86+-efi
-mesa
-mesa-utils
-mkinitcpio-nfs-utils
-modemmanager
-mtools
-nano
-nano-syntax-highlighting
-nbd
-ndisc6
-neovim
-net-tools
-netctl
-networkmanager
-networkmanager-openconnect
-networkmanager-openvpn
-nfs-utils
-nilfs-utils
-noto-fonts
-noto-fonts-cjk
-noto-fonts-emoji
-noto-fonts-extra
-nss-mdns
-ntfs-3g
-ntp
-nvidia
-nvidia-inst
-nvidia-utils
-okular
-openconnect
-openvpn
-os-prober
-pacman-contrib
-pavucontrol
-perl
-pipewire-alsa
-pipewire-jack
-pipewire-pulse
-pkgfile
-plasma-browser-integration
-plasma-desktop
-plasma-disks
-plasma-firewall
-plasma-nm
-plasma-pa
-plasma-systemmonitor
-plasma-workspace
-plocate
-poppler-glib
-power-profiles-daemon
-powerdevil
-ppp
-pptpclient
-print-manager
-pyside6
-python-cachetools
-python-capng
-python-lsp-server
-python-matplotlib
-python-numpy
-python-packaging
-python-pip
-python-pipx
-python-pycryptodomex
-python-pyqt5
 python-pyxdg
 python-six
 qbittorrent
@@ -317,55 +132,6 @@ sg3_utils
 smartmontools
 sof-firmware
 spectacle
-steam
-sudo
-sysfsutils
-system-config-printer
-systemd-sysvcompat
-telegram-desktop
-texinfo
-tldr
-tor
-torbrowser-launcher
-transmission-cli
-transmission-gtk
-ttf-bitstream-vera
-ttf-dejavu
-ttf-liberation
-ttf-opensans
-unrar
-unzip
-usb_modeswitch
-usbutils
-vi
-vim
-vpnc
-welcome
-wget
-which
-whois
-wine
-wireless-regdb
-wireplumber
-wpa_supplicant
-xdg-desktop-portal-kde
-xdg-user-dirs
-xdg-utils
-xf86-input-libinput
-xf86-video-amdgpu
-xf86-video-ati
-xf86-video-qxl
-xfsprogs
-xl2tpd
-xorg-server
-xorg-xdpyinfo
-xorg-xinit
-xorg-xinput
-xorg-xkill
-xorg-xrandr
-xsettingsd
-xz
-yay
         </code></pre>
     </body>
 </html>
