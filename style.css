@@ -97,11 +97,11 @@ pre .hljs {
         margin-right: auto;
     }
 
+    /* width: 776px, because code block has padding 12px, which means 12px to left and right = 24px */
     pre .hljs {
-        width: 800px;
+        width: 776px;
         font-size: 12px;
         margin-left: auto;
         margin-right: auto;
     }
-    
 }
